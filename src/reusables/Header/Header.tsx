@@ -10,19 +10,17 @@ const Header = () => {
       </div>
 
       <div>
+        {/* https://reactrouter.com/en/main/components/nav-link#navlink */}
         <ul className="nav-list">
           <li>
-            {/* https://reactrouter.com/en/main/components/nav-link#navlink */}
-            <NavLink to={"/example"} className="link">Example Page</NavLink>
+            <NavLink to={"/packing"} className="link">Packing List</NavLink>
           </li>
           <li>
-            Packing List
+            <NavLink to={"/flights"} className="link">Flights</NavLink>
           </li>
           <li>
-            Flights
-          </li>
-          <li>
-            Sightseeing
+            <NavLink to={"/sightseeing"} className="link">Sightseeing</NavLink>
+
           </li>
         </ul>
       </div>
