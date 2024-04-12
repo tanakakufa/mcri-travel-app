@@ -49,7 +49,8 @@ const PackingList = () => {
   const toggleIsPacked = (itemId: string) => {
     const itemToUpdate: any = packingList.find((item: any) => item.id === itemId);
 
-    if(itemToUpdate) {
+    // bug 🐛
+    if(itemToUpdate && itemToUpdate.id !== "1003") {
       itemToUpdate.isPacked = !itemToUpdate.isPacked
     }
 
@@ -57,6 +58,7 @@ const PackingList = () => {
       if(item.id === itemId) {
         return { ...item, itemToUpdate}
       }
+
       return item;
     })
     
