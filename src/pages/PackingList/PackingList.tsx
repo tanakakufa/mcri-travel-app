@@ -50,7 +50,7 @@ const PackingList = () => {
     <>
       <Header />
 
-      <div className="page-content-small">
+      <div className="page-content small">
         <PageTitle
           title="Packing List"
           emoji="🧳"

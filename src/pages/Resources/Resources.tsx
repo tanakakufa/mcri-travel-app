@@ -1,4 +1,5 @@
 import Header from "../../reusables/Header/Header";
+import PageTitle from "../../reusables/PageTitle/PageTitle";
 
 const Resources = () => {
   
@@ -6,8 +7,11 @@ const Resources = () => {
     <>
       <Header />
 
-      <div className="page-content">
-        <h1>Resources</h1>
+      <div className="page-content small">
+        <PageTitle
+          title="Resources"
+          emoji="🖥️"
+        />
       </div>
     </>
   )

@@ -3,6 +3,7 @@ import App from "./App";
 import PackingList from "./pages/PackingList/PackingList";
 import Flights from "./pages/Flights/Flights";
 import Sightseeing from "./pages/Sightseeing/Sightseeing";
+import Resources from "./pages/Resources/Resources";
 
 export const router = createBrowserRouter([
   {
@@ -23,6 +24,6 @@ export const router = createBrowserRouter([
   },
   {
     path: "resources",
-    element: <Sightseeing />,
+    element: <Resources />,
   },
 ]);

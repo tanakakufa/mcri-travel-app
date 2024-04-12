@@ -1,4 +1,5 @@
 import Header from "../../reusables/Header/Header";
+import PageTitle from "../../reusables/PageTitle/PageTitle";
 
 const Sightseeing = () => {
   
@@ -6,10 +7,11 @@ const Sightseeing = () => {
     <>
       <Header />
 
-      <div className="page-content">
-        <h1>Sightseeing</h1>
-
-        
+      <div className="page-content large">
+        <PageTitle
+          title="Sightseeing"
+          emoji="🗺️"
+        />
       </div>
     </>
   )
