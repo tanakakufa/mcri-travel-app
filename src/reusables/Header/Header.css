@@ -5,8 +5,8 @@
   align-items: center;
   justify-content: space-between;
   margin-bottom: 30px;
-  background-color: lightgray;
-  padding: 0.5rem 0;
+  background-color: #f26523de;
+  padding: 0.75rem 0;
 }
 
 .nav-logo {
@@ -23,16 +23,16 @@
 }
 
 .link {
-  color: #494949;
+  color: #4C3B4D;
 }
 
 .link:hover {
-  color: #000000;
+  color: #333333;
   text-decoration: underline;
 }
 
 .link.active {
-  color: #000000;
+  color: #4C3B4D;
   font-weight: bold;
 }
 
@@ -49,5 +49,5 @@
 }
 
 .home-link.active {
-  font-weight: normal;
+  font-weight: 500;
 }
