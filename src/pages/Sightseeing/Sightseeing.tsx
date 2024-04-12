@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import Header from "../../reusables/Header/Header";
 import PageTitle from "../../reusables/PageTitle/PageTitle";
+import "./Sightseeing.css";
 
 const Sightseeing = () => {
   const [activities, setActivities] = useState([]);
@@ -20,6 +21,14 @@ const Sightseeing = () => {
       })
       .catch(error => console.error(error));
   }, []);
+
+  const getIntensity = (intensityNumber: number) => {
+    if(intensityNumber === 1) return "Easy";
+    if(intensityNumber === 2) return "Not Easy / Not Hard";
+    if(intensityNumber === 3) return "Moderate";
+    if(intensityNumber === 4) return "Kinda Intense";
+    if(intensityNumber === 5) return "Intense!"
+  }
   
   return (
     <>
@@ -31,19 +40,23 @@ const Sightseeing = () => {
           emoji="🗺️"
         />
 
-        <div>
+        <div className="all-activities-container">
           {activities.map((activity: any) => {
             return (
-              <div>
-                <div>
+              <div className="activity-card">
+                <div className="image-div">
                   <img src={activity.image} />
                 </div>
-                <p>{activity.name}</p>
-                <p>{activity.address}</p>
-                <p><b>Intensity level:</b><span>{activity.intensity}</span></p>
+                <div className="activity-info">
+                  <p className="bold-title">{activity.name}</p>
+                  <p className="small-text">{activity.address}</p>
+                  <p className="small-text"><b>Intensity level: </b><span>{`${activity.intensity} - ${getIntensity(activity.intensity)}`}</span></p>
 
-                <div>
-                  <p>{activity.type}</p>
+                  <div className="activity-tags-container">
+                    <div className="activity-tag">
+                      <p>{activity.type}</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             )

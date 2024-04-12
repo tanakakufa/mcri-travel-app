@@ -62,7 +62,7 @@
       "id": "3001",
       "name": "Victoria Falls",
       "type": "Nature",
-      "intensity": "3",
+      "intensity": 3,
       "image": "https://cdn.kimkim.com/files/a/content_articles/featured_photos/349c7706fc802f6e8983366c313668461562c766/big-81d49a95306b86dc9ac17b9e146a6b0f.jpg",
       "address": "2RGW+CXX, Victoria Falls, Zimbabwe"
     },
@@ -70,7 +70,7 @@
       "id": "3002",
       "name": "Zambezi River Cruise",
       "type": "Nature",
-      "intensity": "2",
+      "intensity": 2,
       "image": "https://www.ilalalodge.com/wp-content/uploads/2023/06/Ra-Ikane-Sunset-Cruise4-768x512.jpg",
       "address": "Zambezi River, Victoria Falls, Zimbabwe"
     },
@@ -78,7 +78,7 @@
       "id": "3003",
       "name": "Gorge Swing",
       "type": "Adventure",
-      "intensity": "5",
+      "intensity": 5,
       "image": "https://www.wildhorizons.co.za/wildhorizons/wp-content/uploads/2018/02/vic-falls-gorge-swing.jpg",
       "address": "3VC4+HVM, Victoria Falls, Zimbabwe"
     },
@@ -86,7 +86,7 @@
       "id": "3004",
       "name": "The Lookout Cafe",
       "type": "Restaurant",
-      "intensity": "1",
+      "intensity": 1,
       "image": "https://lh3.googleusercontent.com/p/AF1QipNVAu82chu-r1a3Kmn6drkFMLFyQqkftwvOX2UC=s680-w680-h510",
       "address": "Batoka Gorge, Victoria Falls, Zimbabwe"
     }
