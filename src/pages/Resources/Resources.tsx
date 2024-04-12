@@ -1,16 +1,16 @@
 import Header from "../../reusables/Header/Header";
 
-const Flights = () => {
+const Resources = () => {
   
   return (
     <>
       <Header />
 
       <div className="page-content">
-        <h1>Flights</h1>
+        <h1>Resources</h1>
       </div>
     </>
   )
 }
 
-export default Flights;
+export default Resources;

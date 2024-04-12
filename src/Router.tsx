@@ -21,4 +21,8 @@ export const router = createBrowserRouter([
     path: "sightseeing",
     element: <Sightseeing />,
   },
+  {
+    path: "resources",
+    element: <Sightseeing />,
+  },
 ]);
