@@ -4,7 +4,7 @@ import PageTitle from "../../reusables/PageTitle/PageTitle";
 import "./PackingList.css"
 
 const PackingList = () => {
-  const [packingList, setPackingList] = useState([])
+  const [packingList, setPackingList] = useState<any[]>([])
 
   useEffect(() => {
     fetch('http://localhost:3000/itemsToPack', {
@@ -45,6 +45,23 @@ const PackingList = () => {
       return "#4A4A4A"
     } 
   };
+
+  const toggleIsPacked = (itemId: string) => {
+    const itemToUpdate: any = packingList.find((item: any) => item.id === itemId);
+
+    if(itemToUpdate) {
+      itemToUpdate.isPacked = !itemToUpdate.isPacked
+    }
+
+    const updatedPackingList: any[] = packingList.map((item: any) => {
+      if(item.id === itemId) {
+        return { ...item, itemToUpdate}
+      }
+      return item;
+    })
+    
+    setPackingList(updatedPackingList)
+  }
   
   return (
     <>
@@ -62,7 +79,7 @@ const PackingList = () => {
               <li key={item.id} className="packing-list-item">
                 <div className="packing-item-inner">
                   <div className="packing-item-input">
-                    <input type="checkbox" checked={item.isPacked} id={item.id} />
+                    <input type="checkbox" checked={item.isPacked} id={item.id} onChange={() => toggleIsPacked(item.id)}/>
                     <div className="label-container">
                       <label htmlFor={item.id} className={item.isPacked ? "item-checked" : ""}>{`${item.title}`}</label>
                       <p className="emoji">{item.emoji}</p>
