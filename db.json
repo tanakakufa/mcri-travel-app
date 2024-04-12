@@ -1,20 +1,20 @@
 {
   "itemsToPack": [
     { 
-      "id": "1001",
-      "title": "Binoculars",
-      "details": "You'll want some binoculars so you can get a better view of all of the wildlife.",
-      "emoji": "🔭",
-      "priority": 3,
-      "isPacked": false
-    },
-    { 
       "id": "1002",
       "title": "Hiking Shoes",
       "details": "We will be doing lots of adventuring, at the Falls and on safari.",
       "emoji": "🥾",
       "priority": 2,
       "isPacked": false
+    },
+    { 
+      "id": "1001",
+      "title": "Binoculars",
+      "details": "You'll want some binoculars so you can get a better view of all of the wildlife.",
+      "emoji": "🔭",
+      "priority": 3,
+      "isPacked": true
     },
     { 
       "id": "1003",
