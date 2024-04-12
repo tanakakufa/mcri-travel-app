@@ -1,5 +1,94 @@
 {
-  "pokemon": [
-    
+  "itemsToPack": [
+    { 
+      "id": "1001",
+      "title": "Binoculars",
+      "details": "You'll want some binoculars so you can get a better view of all of the wildlife.",
+      "emoji": "🔭",
+      "priority": 3,
+      "isPacked": false
+    },
+    { 
+      "id": "1002",
+      "title": "Hiking Shoes",
+      "details": "We will be doing lots of adventuring, at the Falls and on safari.",
+      "emoji": "🥾",
+      "priority": 2,
+      "isPacked": false
+    },
+    { 
+      "id": "1003",
+      "title": "Sun Hat",
+      "details": "Lots of sun in Zimbabwe. Bring something to keep it out of your face.",
+      "emoji": "🥵",
+      "priority": 2,
+      "isPacked": false
+    },
+    { 
+      "id": "1004",
+      "title": "Airplane Entertainment",
+      "details": "The plane ride is loooong! Bring something fun to do.",
+      "emoji": "🎮",
+      "priority": 1,
+      "isPacked": false
+    }
+  ],
+  "flights": [
+    {
+      "id": "2001",
+      "airline": "Delta",
+      "departureAirport": "MSP",
+      "departureCity": "Minneapolis",
+      "arrivalAirport": "VFA",
+      "arrivalCity": "Victoria Falls",
+      "departureDateTime": "May 6, 2024 13:15",
+      "arrivalDateTime": "May 7, 2024 8:15",
+      "flightNumber": "123456"
+    },
+    {
+      "id": "2002",
+      "airline": "Delta",
+      "departureAirport": "VFA",
+      "departureCity": "Victoria Falls",
+      "arrivalAirport": "MSP",
+      "arrivalCity": "Minneapolis",
+      "departureDateTime": "May 20, 2024 13:15",
+      "arrivalDateTime": "May 21, 2024 8:15",
+      "flightNumber": "654321"
+    }
+  ],
+  "thingsToSee": [
+    {
+      "id": "3001",
+      "name": "Victoria Falls",
+      "type": "Nature",
+      "intensity": "3",
+      "image": "https://cdn.kimkim.com/files/a/content_articles/featured_photos/349c7706fc802f6e8983366c313668461562c766/big-81d49a95306b86dc9ac17b9e146a6b0f.jpg",
+      "address": "2RGW+CXX, Victoria Falls, Zimbabwe"
+    },
+    {
+      "id": "3002",
+      "name": "Zambezi River Cruise",
+      "type": "Nature",
+      "intensity": "2",
+      "image": "https://www.ilalalodge.com/wp-content/uploads/2023/06/Ra-Ikane-Sunset-Cruise4-768x512.jpg",
+      "address": "Zambezi River, Victoria Falls, Zimbabwe"
+    },
+    {
+      "id": "3003",
+      "name": "Gorge Swing",
+      "type": "Adventure",
+      "intensity": "5",
+      "image": "https://www.wildhorizons.co.za/wildhorizons/wp-content/uploads/2018/02/vic-falls-gorge-swing.jpg",
+      "address": "3VC4+HVM, Victoria Falls, Zimbabwe"
+    },
+    {
+      "id": "3004",
+      "name": "The Lookout Cafe",
+      "type": "Restaurant",
+      "intensity": "1",
+      "image": "https://lh3.googleusercontent.com/p/AF1QipNVAu82chu-r1a3Kmn6drkFMLFyQqkftwvOX2UC=s680-w680-h510",
+      "address": "Batoka Gorge, Victoria Falls, Zimbabwe"
+    }
   ]
 }
