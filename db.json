@@ -36,7 +36,7 @@
   "flights": [
     {
       "id": "2001",
-      "airline": "Delta",
+      "airline": "Delta Airlines",
       "departureAirport": "MSP",
       "departureCity": "Minneapolis",
       "arrivalAirport": "VFA",
@@ -47,7 +47,7 @@
     },
     {
       "id": "2002",
-      "airline": "Delta",
+      "airline": "Delta Airlines",
       "departureAirport": "VFA",
       "departureCity": "Victoria Falls",
       "arrivalAirport": "MSP",

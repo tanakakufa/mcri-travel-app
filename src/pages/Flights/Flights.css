@@ -1,0 +1,32 @@
+.all-flights-container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-top: 35px;
+}
+
+.flight-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e0e0e053;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.bold-title {
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.small-text {
+  font-size: 0.9rem;
+}
+
+.flight-card > .align-center {
+  text-align: center;
+}
+
+.flight-card > .align-right {
+  text-align: right;
+}
