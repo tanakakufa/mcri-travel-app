@@ -90,5 +90,22 @@
       "image": "https://lh3.googleusercontent.com/p/AF1QipNVAu82chu-r1a3Kmn6drkFMLFyQqkftwvOX2UC=s680-w680-h510",
       "address": "Batoka Gorge, Victoria Falls, Zimbabwe"
     }
+  ],
+  "resources": [
+    {
+      "id": "4001",
+      "name": "Best Restaurants in Victoria Falls",
+      "url": "https://www.fodors.com/world/africa-and-middle-east/zimbabwe/places/victoria-falls/restaurants"
+    },
+    {
+      "id": "4002",
+      "name": "15 Things to do in Victoria Falls",
+      "url": "https://www.tripadvisor.com/Attractions-g293761-Activities-Victoria_Falls_Matabeleland_North_Province.html"
+    },
+    {
+      "id": "4003",
+      "name": "Zambezi Boutique",
+      "url": "https://zambeziboutique.com/"
+    }
   ]
 }

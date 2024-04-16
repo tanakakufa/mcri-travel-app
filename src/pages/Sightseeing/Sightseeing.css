@@ -2,7 +2,7 @@
   display: flex;
   gap: 35px;
   flex-wrap: wrap;
-  margin-top: 40px;
+  margin: 40px 0;
 }
 
 .activity-card {
