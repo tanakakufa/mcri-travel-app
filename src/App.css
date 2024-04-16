@@ -47,3 +47,51 @@
   font-weight: 500;
 }
 
+button.primary {
+  background-color: #618B25;
+  color: white;
+  font-weight: bold;
+  border: transparent;
+  border-radius: 6px;
+  padding: 10px 14px;
+}
+
+button.primary:active {
+  background-color: #547920;
+}
+
+button.secondary {
+  background-color: #4C3B4D;
+  color: white;
+  font-weight: bold;
+  border: transparent;
+  border-radius: 6px;
+  padding: 10px 14px;
+}
+
+button.secondary:active {
+  background-color: #372b38;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #707070;
+}
+
+input[type=text] {
+  border-radius: 6px;
+  background-color: #fcfff7de;
+  border: 1px solid gray;
+  padding: 6px 8px;
+}
+
+input[type=number] {
+  border-radius: 6px;
+  background-color: #FCFFF7de;
+  border: 1px solid gray;
+  padding: 6px 8px;
+}
+

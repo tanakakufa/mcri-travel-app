@@ -66,3 +66,45 @@ input[type=checkbox]
   accent-color: #4C3B4D;
   margin: 0;
 }
+
+.add-new-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+
+.add-new-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  background-color: #e0e0e099;
+  border-radius: 10px;
+  padding: 20px 16px;
+}
+
+.add-new-button-container {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.inputs-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.input-item {
+  display: flex;
+  flex-direction: column;
+  width: 325px;
+}
+
+.input-label {
+  font-size: 0.9rem;
+}

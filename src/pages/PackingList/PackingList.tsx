@@ -2,9 +2,19 @@ import { useEffect, useState } from "react";
 import Header from "../../reusables/Header/Header";
 import PageTitle from "../../reusables/PageTitle/PageTitle";
 import "./PackingList.css"
+import AddNewPackingItem from "./AddNewPackingItem";
+
+export interface IPackingItem {
+  id: string;
+  title: string;
+  details: string;
+  emoji: string;
+  priority: number;
+  isPacked: boolean;
+}
 
 const PackingList = () => {
-  const [packingList, setPackingList] = useState<any[]>([])
+  const [packingList, setPackingList] = useState<IPackingItem[]>([])
 
   useEffect(() => {
     fetch('http://localhost:3000/itemsToPack', {
@@ -64,6 +74,12 @@ const PackingList = () => {
     
     setPackingList(updatedPackingList)
   }
+
+  const onSubmitNewItem = (newItem: IPackingItem) => {
+    const listToEdit = [...packingList];
+    listToEdit.push(newItem);
+    setPackingList(listToEdit);
+  }
   
   return (
     <>
@@ -95,6 +111,10 @@ const PackingList = () => {
             )
           })}
         </ul>
+        
+        <AddNewPackingItem 
+          onSubmitNewItem={onSubmitNewItem}
+        />
       </div>
     </>
   )
