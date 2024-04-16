@@ -37,6 +37,7 @@ const Resources = () => {
           {resourceLinks.map((link: any) => {
             return (
               <div className="link-card" key={link.id}>
+                {/* bug 🐛 */}
                 <a href={link.id === "4003" ? "" : link.url} target="_blank">{link.name}</a>
                 <p>🔗</p>
               </div>
