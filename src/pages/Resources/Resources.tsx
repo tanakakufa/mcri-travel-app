@@ -2,9 +2,16 @@ import { useState, useEffect } from "react";
 import Header from "../../reusables/Header/Header";
 import PageTitle from "../../reusables/PageTitle/PageTitle";
 import "./Resources.css";
+import AddNewResource from "./AddNewResource";
+
+export interface IResource {
+  id: string;
+  name: string;
+  url: string;
+}
 
 const Resources = () => {
-  const [resourceLinks, setResourceLinks] = useState<any[]>([])
+  const [resourceLinks, setResourceLinks] = useState<IResource[]>([])
 
   useEffect(() => {
     fetch('http://localhost:3000/resources', {
@@ -22,7 +29,12 @@ const Resources = () => {
       .catch(error => console.error(error));
   }, []);
 
-  
+  const onSubmitNewItem = (newItem: IResource) => {
+    const listToEdit = [...resourceLinks];
+    listToEdit.push(newItem);
+    setResourceLinks(listToEdit);
+  }
+
   return (
     <>
       <Header />
@@ -44,6 +56,8 @@ const Resources = () => {
             )
           })}
         </div>
+
+        <AddNewResource onSubmitNewItem={onSubmitNewItem} />
       </div>
     </>
   )
