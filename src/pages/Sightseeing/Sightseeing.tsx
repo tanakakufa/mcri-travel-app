@@ -2,9 +2,19 @@ import { useState, useEffect } from "react";
 import Header from "../../reusables/Header/Header";
 import PageTitle from "../../reusables/PageTitle/PageTitle";
 import "./Sightseeing.css";
+import AddNewSight from "./AddNewSight";
+
+export interface ISightToSee {
+  id: string;
+  name: string;
+  type: string;
+  intensity: number,
+  image:string;
+  address: string;
+}
 
 const Sightseeing = () => {
-  const [activities, setActivities] = useState([]);
+  const [activities, setActivities] = useState<ISightToSee[]>([]);
 
   useEffect(() => {
     fetch('http://localhost:3000/thingsToSee', {
@@ -29,6 +39,14 @@ const Sightseeing = () => {
     if(intensityNumber === 4) return "Kinda Intense";
     if(intensityNumber === 5) return "Intense!"
   }
+
+  const onSubmitNewItem = (newItem: ISightToSee) => {
+    const listToEdit = [...activities];
+    listToEdit.push(newItem);
+    // Bug 🐛
+    listToEdit.push(newItem);
+    setActivities(listToEdit);
+  }
   
   return (
     <>
@@ -43,7 +61,7 @@ const Sightseeing = () => {
         <div className="all-activities-container">
           {activities.map((activity: any) => {
             return (
-              <div className="activity-card">
+              <div className="activity-card" key={activity.id}>
                 <div className="image-div">
                   <img src={activity.image} />
                 </div>
@@ -62,6 +80,8 @@ const Sightseeing = () => {
             )
           })}
         </div>
+
+        <AddNewSight onSubmitNewItem={onSubmitNewItem} />
       </div>
     </>
   )

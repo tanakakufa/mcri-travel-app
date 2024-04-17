@@ -27,19 +27,6 @@ const AddNewFlight = ({ onSubmitNewItem }: {onSubmitNewItem: (newItem: IFlight) 
     setNewFlight(editItem);
   }
 
-  // const handlePriorityTextChange = (value: string) => {
-  //   if(value.length && +value > 3) return;  
-  //   const editItem: IFlight = {...newFlight};
-  //   editItem.priority = +value;
-  //   setNewFlight(editItem);
-  // }
-
-  // const handleEmojiTextChange = (value: string) => {
-  //   const editItem: IFlight = {...newFlight};
-  //   editItem.emoji = value;
-  //   setNewFlight(editItem);
-  // }
-
   const onSubmitClick = () => {
     onSubmitNewItem(newFlight);
     setNewFlight(getDefaultFlight());

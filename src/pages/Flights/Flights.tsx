@@ -54,7 +54,7 @@ const Flights = () => {
         <div className="all-flights-container">
           {flights.map((flight: any) => {
             return (
-              <div className="flight-card">
+              <div className="flight-card" key={flight.id}>
                 <div>
                   <p className="bold-title">Departure 🛫</p>
                   <p>{flight.departureDateTime}</p>
