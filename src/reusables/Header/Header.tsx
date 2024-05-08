@@ -15,15 +15,6 @@ const Header = () => {
             {/* https://reactrouter.com/en/main/components/nav-link#navlink */}
             <NavLink to={"/example"} className="link">Example Page</NavLink>
           </li>
-          <li>
-            Packing List
-          </li>
-          <li>
-            Flights
-          </li>
-          <li>
-            Sightseeing
-          </li>
         </ul>
       </div>
     </header>
