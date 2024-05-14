@@ -8,7 +8,7 @@ function App() {
       <Header />
 
       <div className="page-content homepage">
-        <h1>Welcome to the Travel App</h1>
+        <h1>Welcome pages</h1>
 
         <p>Here you will find suggestions on what to pack, what to see, and your flight information</p>
 

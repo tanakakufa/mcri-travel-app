@@ -1,5 +1,30 @@
 {
-  "pokemon": [
+  "FlightInfoPage": [
+    {
+      "departureDate": "August 12, 2024",
+      "departureTime": "14:00",
+      "departureCity": "Victoria Falls",
+      "departureAirport": "Victoria Falls International Airport",
+      "airline": "Emirates",
+      "arrivalDate": "August 12, 2024",
+      "arrivalCity": "Harare, ",
+      "arrivalAirport": "RG Mugabe international Airport",
+      "isOnTime": true
+},
+{
+  "departureDate": "June 03, 2024",
+  "departureTime": "13:02",
+  "departureCity": "Mahe",
+  "departureAirport": "Seychelles international Airport",
+  "airline": "Emirates",
+  "arrivalDate": "June 03, 2024",
+  "arrivalCity": "Johannesburg",
+  "arrivalAirport": "OR tambo international Airport",
+  "isOnTime": true
+}
+    
+
     
   ]
+  
 }
